@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styleLogin.css">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="userid" placeholder="User ID" required>
+      
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Password" required>
+        <span id="togglePassword">👁️</span>
+      </div>
+
+      <button type="submit">Login</button>
+      <p id="statusMsg"></p>
+    </form>
+  </div>
+
+  <!-- Main login logic -->
+  <script type="module" src="scriptLogin.js"></script>
+
+  <!-- Password Toggle Logic -->
+  <script>
+    document.getElementById("togglePassword").addEventListener("click", function () {
+      const pwd = document.getElementById("password");
+      if (pwd.type === "password") {
+        pwd.type = "text";
+        this.textContent = "🙈";
+      } else {
+        pwd.type = "password";
+        this.textContent = "👁️";
+      }
+    });
+  </script>
+  <script src="scriptLogin.js"></script>
+</body>
+</html>

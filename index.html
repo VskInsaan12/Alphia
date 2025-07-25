@@ -1,0 +1,225 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicons for all platforms -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" href="favicon.ico">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPHIA 2K25 - Where Nature Meets Technology</title>
+    <!-- Firebase App SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDwxfWU3LfFgfsqXvWb5izbNtTppQz6_Lo",
+    authDomain: "alphia-2025.firebaseapp.com",
+    projectId: "alphia-2025",
+    storageBucket: "alphia-2025.firebasestorage.app",
+    messagingSenderId: "682994609182",
+    appId: "1:682994609182:web:e15d5868706f5d9ac7120f"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  db.collection('links').doc('current').get().then((doc) => {
+    if (doc.exists) {
+      const data = doc.data();
+      console.log("Fetched Data:", data);
+
+      document.getElementById('flipbook-link').src = data.flipbook;
+      document.getElementById('download1').href = data.download1;
+      document.getElementById('download2').href = data.download2;
+    } else {
+      console.log("Document doesn't exist");
+    }
+  }).catch((err) => console.error("Error:", err));
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="normalContent">
+  <header>
+    <div class="logo-wrapper position-relative d-inline-block">
+      <div class="curtain curtain-left"></div>
+      <div class="curtain curtain-right"></div>
+      <img src="logo.png" alt="ALPHIA 2K25 Logo" class="img-fluid logo-animated" />
+    </div>
+    <p><strong>Where <span style="color:#8BC34A;font-weight:bold;font-family:'Orbitron',sans-serif;"><i class="bi bi-tree-fill"></i> Nature</span> <span style="color:#FFFFFF;font-weight:bold">Meets</span> <span style="color:#00BCD4;font-weight:bold;font-family:'Orbitron',sans-serif;"><i class="bi bi-cpu-fill"></i> Technology</span></strong></p>
+    <small>Organized by Dnyan Prabodhan Mandir School, Belgaum</small>
+  </header>
+
+  <main class="container my-5">
+    <section class="tech-nature mb-5">
+      <h2>🌱 Embrace Innovation • Preserve Nature 🤖</h2>
+      <p>Join us for a futuristic journey where sustainability and science merge to inspire!</p>
+    </section>
+       
+        <section id="countdown-section" class="text-center my-5 position-relative overflow-hidden">
+  <h3 class="mb-4">⏳ Countdown to ALPHIA 2K25</h3>
+
+  <!-- Animated falling leaves (nature theme) -->
+  <div class="leaf-container">
+    <img src="logo.png" class="leaf leaf1" alt="leaf1">
+    <img src="logo.png" class="leaf leaf2" alt="leaf2">
+    <img src="logo.png" class="leaf leaf3" alt="leaf3">
+  </div>
+
+  <!-- Countdown clock -->
+  <div id="countdown" class="countdown-box d-inline-flex justify-content-center flex-wrap gap-3 p-3 neon-frame">
+    <div class="time-box pulse"><span id="days">--</span><br>Days</div>
+    <div class="time-box pulse"><span id="hours">--</span><br>Hours</div>
+    <div class="time-box pulse"><span id="minutes">--</span><br>Minutes</div>
+    <div class="time-box pulse"><span id="seconds">--</span><br>Seconds</div>
+  </div>
+
+  <p class="mt-3 text-light">
+    <i class="bi bi-calendar-event-fill"></i> ALPHIA 2K25 happens on <strong>11th August 2025</strong>
+  </p>
+</section>
+
+    <section class="flipbook-section text-center mb-5">
+      <h3>📘 Event Brochure</h3>
+      <p>View our interactive flipbook below or download the PDF.</p>
+      <div class="flipbook-wrapper mb-3">
+<iframe id="flipbook-link" allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/5319110b02.html" style="border: 0px; width: 100%; height: 400px;"></iframe>
+      </div>
+     <div class="d-flex justify-content-center gap-3 flex-wrap">
+    <a id="download1" target="_blank" href="https://drive.google.com/file/d/1MRtpILRoxqvu_5ebujiaMwCZqXQyWf0B/view?usp=drive_link" class="btn btn-custom shadow">
+       Download Coloured PDF
+    </a>
+    <a id="download2" target="_blank" href="https://drive.google.com/file/d/1yIEyiCI7Mj6tFvwt8ZCoReTK7q41C_-W/view?usp=drive_link" class="btn btn-outline-dark shadow">
+       Download Black & White PDF
+    </a>
+  </div>
+    </section>
+    <section id="registrationSection" class="text-center mb-5">
+  <div id="registrationOpen">
+    <h3>📝 Register Now</h3>
+    <p>Be a part of this exciting blend of nature and technology.</p>
+    <a target="_blank" href="login.html" class="btn btn-custom btn-lg">
+      <i class="bi bi-box-arrow-in-right"></i> Go to Registration
+    </a>
+  </div>
+
+  <div id="registrationClosed" style="display: none;">
+    <h3 class="text-danger">🚫 Registration is now closed</h3>
+    <p>Thank you for your interest in ALPHIA 2K25.</p>
+  </div>
+</section>
+</div>
+<div id="corruptContent" style="display: none; position: relative; overflow: hidden;">
+    <!-- Glitch text -->
+  <div class="glitch-text">ALPHIA 2K25 — A Successful Conclusion!</div>
+  <div class="overlay"></div>
+</div>
+    <section class="py-4" style="background-color: transparent;">
+  <h2 class="text-center mb-4">Our Proud Sponsors</h2>
+
+  <div id="sponsorCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner text-center" id="sponsorCarouselInner"></div>
+
+    <!-- Navigation arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#sponsorCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sponsorCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Dots indicators -->
+    <div class="carousel-indicators" id="sponsorCarouselIndicators"></div>
+  </div>
+
+  <style>
+    .carousel-inner .row {
+      padding: 0 1rem;
+    }
+    .carousel-inner .col-md-4 {
+      display: flex;
+      justify-content: center;
+    }
+    .carousel-inner .p-3 {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #000;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+      min-width: 180px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+  </style>
+
+  <script>
+    const sponsors = [
+      "Jay Bharat Foundation",
+      "Shubham Traders - The Hosiery World",
+      "Viva Constructions",
+      "BSC The Textile Mall",
+      "Parth Developers And Builders",
+      "Orionis Builders And Developer",
+      "Jai Ganesh And Developers",
+      "Roopesh Vyas"
+    ];
+
+    const inner = document.getElementById("sponsorCarouselInner");
+    const indicators = document.getElementById("sponsorCarouselIndicators");
+    const totalSlides = Math.ceil(sponsors.length / 3);
+
+    for (let i = 0; i < totalSlides; i++) {
+      const slide = document.createElement("div");
+      slide.className = "carousel-item" + (i === 0 ? " active" : "");
+
+      const group = sponsors.slice(i * 3, i * 3 + 3).map(name => `
+        <div class="col-12 col-md-4 mb-3">
+          <div class="p-3">${name}</div>
+        </div>
+      `).join("");
+
+      slide.innerHTML = `<div class="row justify-content-center">${group}</div>`;
+      inner.appendChild(slide);
+
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("data-bs-target", "#sponsorCarousel");
+      dot.setAttribute("data-bs-slide-to", i.toString());
+      if (i === 0) dot.className = "active";
+      indicators.appendChild(dot);
+    }
+  </script>
+</section>
+
+
+  </main>
+  <footer>
+  <p>
+    &copy; 2025 ALPHIA 2K25 | 
+    <a href="https://dnyanprabodhan.com" target="_blank" class="footer-link">
+      Dnyan Prabodhan Mandir School
+    </a> | Belgaum
+  </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

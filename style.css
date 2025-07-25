@@ -1,0 +1,324 @@
+
+    body {
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 2rem 1rem;
+      border-bottom: 5px solid #4CAF50;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .curtain {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background: url('curtain.png') center center / cover no-repeat;
+      z-index: 2;
+      animation: openCurtain 2.5s ease-out forwards;
+    }
+    .curtain-left { left: 0; animation-delay: 0s; }
+    .curtain-right { right: 0; animation-delay: 0s; }
+    @keyframes openCurtain {
+      0% { width: 50%; opacity: 1; }
+      100% { width: 0%; opacity: 0; }
+    }
+    .logo-animated {
+      animation: fadeInLogo 0.5s ease-in-out 0.5s forwards;
+      filter: drop-shadow(0 0 10px #4CAF50) drop-shadow(0 0 20px #4CAF50);
+      opacity: 0;
+      max-width: 300px;
+      height: auto;
+    }
+    @keyframes fadeInLogo {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .flipbook-section {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      color: #000;
+    }
+    .btn-custom {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    .btn-custom:hover {
+      background-color: #388e3c;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .hover-card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      color: #000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    }
+    .tech-nature {
+      background: rgba(0,0,0,0.65);
+      border: 2px solid #4CAF50;
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .tech-nature h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .tech-nature p {
+      font-size: 1.1rem;
+      color: #e0f2f1;
+      font-family: 'Orbitron', sans-serif;
+    }
+    h3 {
+      color: #000;
+      font-family: 'Orbitron', sans-serif;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+      }
+      header img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+    .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #2196f3;
+  text-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+    /* Fix Heyzine Flipbook overflow */
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+/* Extra responsiveness */
+@media (max-width: 768px) {
+  iframe {
+    height: 70vw;
+    aspect-ratio: auto;
+  }
+}
+.flipbook-wrapper {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.flipbook-wrapper iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .flipbook-wrapper iframe {
+    height: 65vw;
+    aspect-ratio: auto;
+  }
+}
+
+.btn-outline-dark {
+  border: 2px solid #000;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-outline-dark:hover {
+  background: #000;
+  color: #fff;
+}
+#countdown-section {
+  background: radial-gradient(ellipse at center, #0f2027, #203a43, #2c5364);
+  border: 2px solid #4CAF50;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 20px #00ff88;
+  position: relative;
+  z-index: 1;
+}
+
+.countdown-box {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.neon-frame {
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5), inset 0 0 20px rgba(0,255,255,0.3);
+  border-radius: 20px;
+}
+
+.time-box {
+  min-width: 90px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.7);
+  box-shadow: inset 0 0 10px #00e5ff, 0 0 20px rgba(0,255,0,0.2);
+  color: #ffffff;
+  text-shadow: 0 0 5px #4CAF50;
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Leaves animation (nature effect) */
+.leaf-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.leaf {
+  position: absolute;
+  width: 40px;
+  opacity: 0.8;
+  animation: fall 10s linear infinite;
+}
+
+.leaf1 { left: 10%; animation-delay: 0s; }
+.leaf2 { left: 45%; animation-delay: 3s; }
+.leaf3 { left: 75%; animation-delay: 6s; }
+
+@keyframes fall {
+  0% { top: -100px; transform: rotate(0deg); }
+  100% { top: 100%; transform: rotate(0deg); }
+}
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+.glitch-text {
+      font-size: 4rem;
+      font-weight: 800;
+      position: relative;
+      color: #00ff00;
+      text-align: center;
+      animation: glitch-flicker 0.8s infinite alternate;
+    }
+
+    .glitch-text::before,
+    .glitch-text::after {
+      content: 'ALPHIA 2K25 — A Successful Conclusion!';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      opacity: 0.7;
+    }
+
+    .glitch-text::before {
+      color: red;
+      top: -2px;
+      left: 2px;
+      animation: glitch-anim 1s infinite linear alternate-reverse;
+    }
+
+    .glitch-text::after {
+      color: blue;
+      top: 2px;
+      left: -2px;
+      animation: glitch-anim 1.2s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-anim {
+      0% { clip-path: inset(0 0 80% 0); }
+      20% { clip-path: inset(20% 0 60% 0); }
+      40% { clip-path: inset(40% 0 40% 0); }
+      60% { clip-path: inset(60% 0 20% 0); }
+      80% { clip-path: inset(80% 0 0 0); }
+      100% { clip-path: inset(0 0 0 0); }
+    }
+
+    @keyframes glitch-flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.6; }
+      100% { opacity: 1; transform: scale(1.02); }
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 255, 0, 0.02),
+        rgba(0, 255, 0, 0.02) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
+      z-index: 999;
+      animation: scan 3s infinite linear;
+    }
+
+    @keyframes scan {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
