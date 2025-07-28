@@ -1,4 +1,0 @@
-<FilesMatch "^(script|scriptLogin)\.js$">
-  Order allow,deny
-  Deny from all
-</FilesMatch>
