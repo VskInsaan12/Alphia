@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Login</title>
-  <link rel="stylesheet" href="styleLogin.css">
+  <link rel="stylesheet" href="styleLogin.css" />
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+  <!-- Firebase SDKs (Compat mode) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+  <!-- Your login logic -->
+  <script src="scriptLogin.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <h2>Login</h2>
@@ -26,7 +30,7 @@
   </div>
 
   <!-- Main login logic -->
-  <script type="module" src="scriptLogin.js"></script>
+  
 
   <!-- Password Toggle Logic -->
   <script>
@@ -41,6 +45,6 @@
       }
     });
   </script>
-  <!--<script src="scriptLogin.js"></script>-->
+ 
 </body>
 </html>
