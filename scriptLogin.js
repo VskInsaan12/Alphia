@@ -1,1 +1,57 @@
-const _0x2b9b34=_0x19a8;(function(_0x6d0ecf,_0x28549b){const _0x23a86c=_0x19a8,_0xb62b85=_0x6d0ecf();while(!![]){try{const _0x5a7596=parseInt(_0x23a86c(0x104))/0x1*(parseInt(_0x23a86c(0xfa))/0x2)+parseInt(_0x23a86c(0xf0))/0x3+-parseInt(_0x23a86c(0x113))/0x4*(parseInt(_0x23a86c(0xf6))/0x5)+parseInt(_0x23a86c(0xf9))/0x6*(parseInt(_0x23a86c(0xf7))/0x7)+parseInt(_0x23a86c(0x100))/0x8+parseInt(_0x23a86c(0x11b))/0x9+-parseInt(_0x23a86c(0x114))/0xa;if(_0x5a7596===_0x28549b)break;else _0xb62b85['push'](_0xb62b85['shift']());}catch(_0x82d03d){_0xb62b85['push'](_0xb62b85['shift']());}}}(_0x2ff6,0xd810d));import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';import{getDatabase,ref,get,child}from'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';function _0x19a8(_0x2d535e,_0x2cfb8b){const _0x2ff6db=_0x2ff6();return _0x19a8=function(_0x19a862,_0x372620){_0x19a862=_0x19a862-0xf0;let _0x4e1080=_0x2ff6db[_0x19a862];return _0x4e1080;},_0x19a8(_0x2d535e,_0x2cfb8b);}const firebaseConfig={'apiKey':_0x2b9b34(0x102),'authDomain':_0x2b9b34(0xff),'databaseURL':_0x2b9b34(0xf3),'projectId':_0x2b9b34(0xfc),'storageBucket':_0x2b9b34(0x115),'messagingSenderId':_0x2b9b34(0x10b),'appId':_0x2b9b34(0x10e)},app=initializeApp(firebaseConfig),database=getDatabase(app);function _0x2ff6(){const _0x562591=['textContent','statusMsg','4834185BkEtvG','46193inJxWB','trim','186ZpMvrq','730CSwmzd','userid','alphia-login','loginForm','F12','alphia-login.firebaseapp.com','4614624dgHVqy','error','AIzaSyC84DTXsKFOd99YlHrh44w4z5AZBHgbgP8','then','3071iygTZT','getElementById','shiftKey','password','addEventListener','Error\x20connecting\x20to\x20database.','includes','1092964695051','val','Database\x20error:','1:1092964695051:web:57a03a84d97c85479d5b0e','exists','values','No\x20users\x20found.','key','4PqmjLa','11798900DCjZUW','alphia-login.firebasestorage.app','href','preventDefault','ctrlKey','submit','find','6265746TlhnsL','value','1299678uBCLnl','form.html','Invalid\x20User\x20ID\x20or\x20Password.','https://alphia-login-default-rtdb.asia-southeast1.firebasedatabase.app'];_0x2ff6=function(){return _0x562591;};return _0x2ff6();}document[_0x2b9b34(0x105)](_0x2b9b34(0xfd))[_0x2b9b34(0x108)](_0x2b9b34(0x119),function(_0x4f0e18){const _0xa4c06=_0x2b9b34;_0x4f0e18['preventDefault']();const _0x57fabe=document['getElementById'](_0xa4c06(0xfb))[_0xa4c06(0x11c)]['trim'](),_0x2b7502=document[_0xa4c06(0x105)](_0xa4c06(0x107))['value'][_0xa4c06(0xf8)](),_0x364c8b=document['getElementById'](_0xa4c06(0xf5)),_0x3476de=ref(database);get(child(_0x3476de,'users'))[_0xa4c06(0x103)](_0x5ada34=>{const _0x2c7cd0=_0xa4c06;if(_0x5ada34[_0x2c7cd0(0x10f)]()){const _0x23fcfa=_0x5ada34[_0x2c7cd0(0x10c)](),_0x353e6b=Object[_0x2c7cd0(0x110)](_0x23fcfa),_0x2fdcaa=_0x353e6b[_0x2c7cd0(0x11a)](_0xdc7269=>_0xdc7269[_0x2c7cd0(0xfb)]===_0x57fabe&&_0xdc7269[_0x2c7cd0(0x107)]===_0x2b7502);_0x2fdcaa?window['location'][_0x2c7cd0(0x116)]=_0x2c7cd0(0xf1):_0x364c8b['textContent']=_0x2c7cd0(0xf2);}else _0x364c8b[_0x2c7cd0(0xf4)]=_0x2c7cd0(0x111);})['catch'](_0x5b0d9b=>{const _0x2d1e7f=_0xa4c06;console[_0x2d1e7f(0x101)](_0x2d1e7f(0x10d),_0x5b0d9b),_0x364c8b['textContent']=_0x2d1e7f(0x109);});}),document[_0x2b9b34(0x108)]('contextmenu',_0x191030=>_0x191030[_0x2b9b34(0x117)]()),document[_0x2b9b34(0x108)]('keydown',_0x1d77d7=>{const _0x4780e9=_0x2b9b34;(_0x1d77d7[_0x4780e9(0x118)]&&['u','U','s','S','c','C'][_0x4780e9(0x10a)](_0x1d77d7[_0x4780e9(0x112)])||_0x1d77d7[_0x4780e9(0x112)]===_0x4780e9(0xfe)||_0x1d77d7[_0x4780e9(0x118)]&&_0x1d77d7[_0x4780e9(0x106)]&&['I','i','C','c','J','j'][_0x4780e9(0x10a)](_0x1d77d7[_0x4780e9(0x112)]))&&_0x1d77d7['preventDefault']();});
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC84DTXsKFOd99YlHrh44w4z5AZBHgbgP8",
+  authDomain: "alphia-login.firebaseapp.com",
+  databaseURL: "https://alphia-login-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "alphia-login",
+  storageBucket: "alphia-login.appspot.com",
+  messagingSenderId: "1092964695051",
+  appId: "1:1092964695051:web:57a03a84d97c85479d5b0e"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+// Handle login form submission
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const userId = document.getElementById("userid").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const statusMsg = document.getElementById("statusMsg");
+
+  firebase.database().ref("users").get().then((snapshot) => {
+    if (snapshot.exists()) {
+      const users = snapshot.val();
+      const match = Object.values(users).find(
+        (user) => user.userid === userId && user.password === password
+      );
+
+      if (match) {
+        window.location.href = "form.html";
+      } else {
+        statusMsg.textContent = "Invalid User ID or Password.";
+      }
+    } else {
+      statusMsg.textContent = "No users found.";
+    }
+  }).catch((error) => {
+    console.error("Database error:", error);
+    statusMsg.textContent = "Error connecting to database.";
+  });
+});
+
+// Disable right-click
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+// Disable common dev tools shortcuts
+document.addEventListener("keydown", (e) => {
+  if (
+    (e.ctrlKey && ["u", "U", "s", "S", "c", "C"].includes(e.key)) ||
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && ["I", "i", "C", "c", "J", "j"].includes(e.key))
+  ) {
+    e.preventDefault();
+  }
+});
